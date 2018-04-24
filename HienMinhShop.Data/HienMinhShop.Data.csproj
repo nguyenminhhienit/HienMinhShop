@@ -47,6 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HienMinhShopDbContext.cs" />
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +66,13 @@
       <Project>{9e3f3f86-41f6-4353-8dc1-33d1f59cc910}</Project>
       <Name>HienMinhShop.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HienMinhShop.Model\HienMinhShop.Model.csproj">
+      <Project>{fb5f183e-41c7-4c2d-96eb-a810c44d0637}</Project>
+      <Name>HienMinhShop.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
